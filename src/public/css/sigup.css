@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    margin-top: 50px;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    height: 60px;
+    width: 60px;
+}
+
+p.instruction {
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    margin-left: 160px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 160px;
+}
+
+.form-group img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.form-group input {
+    width: 750px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    width: 850px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
