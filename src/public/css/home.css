@@ -17,6 +17,17 @@ header {
     justify-content: space-between;
 }
 
+.login-signup {
+    text-align: right;
+}
+
+.welcome {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
 .header img{
     height: 70px;
     width: 70px;
@@ -32,16 +43,6 @@ header {
     margin-left: 30px;
 }
 
-.login-signup {
-    text-align: right;
-}
-
-.login-signup a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
 main {
     padding: 20px;
 }
@@ -53,23 +54,42 @@ main {
 }
 
 .product-image {
-    flex: 0 0 300px;
+    flex: 0 0 200px;
     margin-right: 20px;
 }
 
 .product-image img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
-.product-details h1 {
-    font-size: 28px;
-    margin-top: 0;
+.inputSyringeNum {
+    margin-bottom: 170px;
 }
 
-.product-description h2,
-.contact-info h2 {
-    font-size: 24px;
+.inputSyringeNum label {
+    font-size: 20px;
+}
+
+.inputSyringeNum #syringeNum {
+    width: 200px;
+    height: 30px;
+    background-color: #b8b8b8;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.inputSyringeNum input[type=submit] {
+    width: 100px;
+    height: 40px;
+    background-color: #999999;
+    margin: auto;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
 }
 
 footer {

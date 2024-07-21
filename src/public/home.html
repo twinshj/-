@@ -4,57 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서심당 주사기</title>
-    <link rel="stylesheet" href="../../src/css/home.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <header>
         <div class="header_left">
             <div class="header">
-                <a href="http://127.0.0.1:5500/src/html/home.html">
-                    <img src="../../images/logo.png" alt="서심당">
+                <a href="home.html">
+                    <img src="images/logo.png" alt="서심당">
                 </a>
             </div>
             <div class="navigation">
-                <a href="http://127.0.0.1:5500/src/html/imformation.html">제품정보</a>
-                <a href="http://127.0.0.1:5500/src/html/login.html">사용방법</a>
+                <a href="imformation.html">제품정보</a>
+                <a href="login.html">사용방법</a>
             </div>
         </div>
 
-        <div class="login-signup">
-            <a href="http://127.0.0.1:5500/src/html/login.html">로그인</a>
-            <a href="http://127.0.0.1:5500/src/html/sigup.html">회원가입</a>
-        </div>
+        <p class="welcome">환영합니다 --- 님</p>
+
+
     </header>
 
     <main>
         <section class="product-info">
-            <div class="product-image">
-                <img src="../../images/temporary.png" alt="서심당 주사기">
-            </div>
+            
+            <img src="images/temporary.png" alt="서심당 주사기" class="product-image">
             <div class="product-details">
                 <h1>서심당 주사기</h1>
                 <p>고품질의 주사기를 제공합니다.</p>
                 <p>안전하고 편리한 사용이 가능합니다.</p>
-                <p>합리적인 가격으로 구매할 수 있습니다.</p>
             </div>
         </section>
 
-        <section class="product-description">
-            <h2>제품 상세 정보</h2>
-            <p>사용자의 편의성과 안전성을 최우선으로 고려하여 설계되었습니다.</p>
-            <p>합리적인 가격으로 구매할 수 있어 경제적 부담이 적습니다.</p>
-        </section>
-        <br><br>
-        <section class="contact-info">
-            <h2>문의사항</h2>
-            <p>제품에 대해 더 궁금한 점이 있다면 언제든 연락 주시기 바랍니다.</p>
-            <p>전화: 010-xxxx-xxxx</p>
-            <p>이메일: email@gmail.com</p>
-        </section>
+        <div class="inputSyringeNum">
+            <label for="syringeNum">주사기 번호 입력하기 : </label>
+            <input type = "text" id = "syringeNum" name = "syringeNum" required placeholder="주사기 번호 입력">
+            <input type="submit" value="확인">
+        </div>
+
+
     </main>
 
     <footer>
         <p>&copy; 2024 서심당. All rights reserved.</p>
     </footer>
+    
 </body>
 </html>

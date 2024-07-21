@@ -1,8 +1,15 @@
 const express = require('express'); /*require 함수를 사용하여 Express와 Node.js의 기본 경로(path) 모듈을 가져옵니다. */
 const path = require('path'); /*Express는 Node.js의 웹 애플리케이션 프레임워크로, HTTP 요청과 응답을 처리하는 강력한 기능을 제공합니다.
                                 path 모듈은 파일 및 디렉터리 경로 관리에 사용됩니다. */
+const session = require('express-session');
 const app = express(); /*express() 함수를 호출하여 새로운 Express 애플리케이션 객체를 생성합니다. */
 const port = 3000; // 프론트엔드 서버 포트
+
+app.use(session({
+    secret: 'your_secret_key',
+    resave: false,
+    saveUninitialized: true
+}));
 
 app.use(express.static(path.join(__dirname, 'public'))); /* path.join(__dirname, 'public')을 통해 현재 스크립트가 위치한 디렉터리에 있는 'public' 디렉터리의 경로를 지정합니다. */
                                                          /*이렇게 설정하면 /public 경로로 들어오는 모든 요청에 대해 해당 디렉터리의 정적 파일을 제공합니다.*/

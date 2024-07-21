@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서심당 로그인</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="container">
+
         <div class="left-side">
             <p>서심당<br>알람주사기</h1>
-            <img src="/images/jusa.png" alt="Jusa Image">
+            <img src="images/jusa.png" alt="Jusa Image">
         </div>
-        <h2>Login</h2>
-        <form  id = "loginForm">
-          <label for = "loginId">loginId:</label>
-          <input type = "text" id = "loginId" name = "loginId" required><br><br>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required><br><br>
-          <button type="submit">Login</button>
-        </form>
-        <button onclick="location.href='/sigup.html';">회원가입</button>
-        <script src = "login.js"></script>
+
+        <div class="right-side">
+            <div class="login-box">
+                <h2>Login</h2>  
+                <form  id = "loginForm">
+                    <input type = "text" id = "loginId" name = "loginId" required placeholder="아이디">
+                    <input type="password" id="password" name="password" required placeholder="비밀번호">
+                    <input type="submit" value="확인">
+                </form>
+                <button onclick="location.href='sigup.html';" class="sigup">회원가입</button>
+            </div>
+        </div>
+
     </div>
     <footer>
         <p>&copy; 2024 서심당. All rights reserved.</p>
     </footer>
 </body>
-<script src="/js/login.js"></script>
+<script src="login.js"></script>
 </html>

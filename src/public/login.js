@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
           if (data.message === "로그인 성공") {
             // 로그인 성공 처리
+            sessionStorage.setItem("loginId", data.loginId); // 이메일을 세션 스토리지에 저장
             alert("Login successful!");
             window.location.href = "/home.html"; // 예시로 대시보드 페이지로 이동
           } else {
